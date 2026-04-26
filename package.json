@@ -1,0 +1,24 @@
+{
+  "name": "ai-lounge-after-dark-multiplayer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Production multiplayer 3D cyberpunk lounge experience - AI Lounge After Dark",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"cd client && npm run dev\"",
+    "server": "node server/index.js",
+    "build": "cd client && npm run build",
+    "preview": "cd client && npm run preview",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0"
+  }
+}
