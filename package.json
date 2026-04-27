@@ -1,24 +1,25 @@
 {
   "name": "ai-lounge-after-dark-multiplayer",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "private": true,
-  "description": "Production multiplayer 3D cyberpunk lounge experience - AI Lounge After Dark",
+  "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"cd client && npm run dev\"",
-    "server": "node server/index.js",
-    "build": "cd client && npm run build",
-    "preview": "cd client && npm run preview",
-    "install-all": "npm install && cd client && npm install"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && vercel deploy"
   },
   "dependencies": {
-    "concurrently": "^8.2.2",
-    "cors": "^2.8.5",
     "express": "^4.19.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.3.1",
-    "socket.io": "^4.7.5"
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "three": "^0.168.0",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "@types/node": "^20.14.0"
+    "@types/three": "^0.168.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "@vercel/node": "^3.0.0"
   }
 }

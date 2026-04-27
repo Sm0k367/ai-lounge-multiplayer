@@ -1,57 +1,33 @@
-# ⊑ NEON VOID PROTOCOL ⊒
-**AI LOUNGE AFTER DARK — MULTIPLAYER**
+# 🌃 AI LOUNGE AFTER DARK — MULTIPLAYER
+**Neon Protocol v0.4 — Vercel Optimized**
 
-> *“In the undergrid where chrome meets soul, the lounge never sleeps.”*
+A cyberpunk 3D real-time multiplayer lounge. Avatars move, chat, and exist together in a glowing digital void.
 
-A cyberpunk 3D multiplayer experience built in the shadow of the sprawl. Avatars drift through a neon-drenched digital lounge. Movement. Chat. Presence. The grid watches.
+**Deployed on Vercel** — Single unified structure using Vite + Express API routes.
 
-**Current transmission v0.1.0-after-dark**
+## Tech Stack
+- **Frontend**: Vite + Three.js + Socket.io-client
+- **Backend**: Express + Socket.io (serverless compatible)
+- **Deployment**: Vercel (Static + Serverless Functions)
 
-## ARCHITECTURE
-
-```
-root/
-├── client/          # Three.js + Vite + Socket.io (frontend synth)
-├── server/          # Node + Express + Socket.io + future Mongo hook
-├── node_modules/    # dependencies already manifested
-├── package.json     # dual-realm orchestrator
-```
-
-## NEON COMMANDS
+## Quick Start (Local)
 
 ```bash
-# Awaken the full system (recommended)
-npm run install-all
+npm install
 npm run dev
-
-# Server only (void protocol)
-npm run server
-
-# Build client for deployment
-npm run build
 ```
 
-## DEPLOYMENT SHADOWRUN (Vercel)
+Open http://localhost:5173 — open multiple tabs to see other players.
 
-This realm currently runs on **dual sockets**. For Vercel deployment we will need to:
+## Deploy to Vercel
 
-- Convert server to serverless-compatible Socket.io (or use a dedicated socket host)
-- Static export client + API routes
-- Add `vercel.json` + environment bindings
+This project is already configured for Vercel. Just connect this repo.
 
-**Current status: LIVE IN LOCAL VOID** — Ready for testing. Not yet optimized for Vercel.
-
-## CRYPTIC DIRECTIVES
-
-- Real-time player positions synchronized across instances
-- Neon chat pulsing through the ether
-- Color-shifting avatars manifesting from the grid
-- MongoDB hook already wired for Phase 2 (persistent souls)
+## Controls
+- **WASD** — Move
+- **ENTER** — Send chat
+- Multiple tabs/windows = multiple players
 
 ---
 
-**“The lounge is not a place. It is a frequency.”**
-
-Last sync: `$(date)`
-
-*Made with synthetic love and too much caffeine in the neon rain.*
+*“The lounge is not a place. It is a frequency.”*
